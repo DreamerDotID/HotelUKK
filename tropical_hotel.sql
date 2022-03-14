@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 14, 2022 at 10:41 AM
+-- Generation Time: Mar 14, 2022 at 11:02 AM
 -- Server version: 10.3.34-MariaDB-cll-lve
 -- PHP Version: 7.3.33
 
@@ -140,15 +140,6 @@ CREATE TABLE `guest` (
   `status` enum('Telah Dikonfirmasi','Belum Dikonfirmasi') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `guest`
---
-
-INSERT INTO `guest` (`id`, `nik`, `nama`, `nomor_hp`, `alamat`, `check_in`, `check_out`, `ruangan`, `harga`, `status`) VALUES
-(55, 34534, 'Tes', 9239238, 'tes', '02/02/2022', '02/28/2022', 'Luxury', 'Rp. 143000000 untuk 26 Hari', 'Belum Dikonfirmasi'),
-(57, 6789678, 'Tes', 1823213, 'Tes', '03/01/2022', '03/02/2022', 'Luxury', 'Rp. 5500000 untuk 1 Hari', 'Belum Dikonfirmasi'),
-(58, 2147483647, 'Umi Alimatul Khoiriyah', 2147483647, 'Banguntapan', '03/15/2022', '03/18/2022', 'Luxury', '', 'Belum Dikonfirmasi');
-
 -- --------------------------------------------------------
 
 --
@@ -278,7 +269,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `guest`
 --
 ALTER TABLE `guest`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `images`
